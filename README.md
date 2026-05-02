@@ -24,29 +24,7 @@ The control system is built around a **5-state Finite State Machine (FSM)**, con
 
 ---
 
-## System Architecture — Finite State Machine (FSM)
 
-The navigation logic is implemented as a 5-state FSM:
-
-```
-                    L < 150 & R < 150
-                   ┌─────────────────────┐
-                   ▼                     │
-┌─────────┐    ┌─────────┐    ┌──────────────┐
-│ FORWARD │───▶│ STOPPED │───▶│  REVERSING   │
-│ (cruise)│    │(300ms)  │    │  (600ms)     │
-└─────────┘    └─────────┘    └──────────────┘
-     ▲                                │
-     │                                ▼
-     │                         ┌─────────────┐
-     └─────────────────────────│   TURNING   │
-                                │  (800ms)    │
-                                └─────────────┘
-                                
-     ┌──────────┐
-     │ DEAD_END │  ← Terminal fallback (reverse 2s then halt)
-     └──────────┘
-```
 
 ### State Descriptions
 
