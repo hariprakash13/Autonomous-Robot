@@ -100,11 +100,11 @@ The following changes were made iteratively based on test results:
 - `CHANGE 2`: Turn duration increased from **600 ms → 800 ms** after Scenario 2 testing showed insufficient heading change
 - `CHANGE 3`: STOPPED dwell increased from **200 ms → 300 ms** to allow dynamic obstacles to partially clear before reversing
 - `CHANGE 4`: Sensor timeout set to **30 ms** after testing showed 25 ms caused missed echoes on angled surfaces
-- `TEST 1`: Verified `L < 200` triggers `steer_right()` at measured wall distance ~180 mm ✅
-- `TEST 2`: Verified dual `L < 150 & R < 150` correctly triggers STOPPED state ✅
-- `TEST 3`: Verified 800 ms turn duration achieves ~90° heading change on hard floor ✅
-- `TEST 4`: Verified 30 ms timeout safely returns 500 mm on open space ✅
-- `TEST 5`: Verified recovery sequence (STOPPED → REVERSING → TURNING → FORWARD) completes without collision ✅
+- `TEST 1`: Verified `L < 200` triggers `steer_right()` at measured wall distance ~180 mm 
+- `TEST 2`: Verified dual `L < 150 & R < 150` correctly triggers STOPPED state 
+- `TEST 3`: Verified 800 ms turn duration achieves ~90° heading change on hard floor 
+- `TEST 4`: Verified 30 ms timeout safely returns 500 mm on open space 
+- `TEST 5`: Verified recovery sequence (STOPPED → REVERSING → TURNING → FORWARD) completes without collision 
 
 ---
 
