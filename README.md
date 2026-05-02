@@ -1,4 +1,4 @@
-# ENGR7023 – Autonomous Corridor Navigation Robot
+# Autonomous Corridor Navigation Robot
 ### Real-time Embedded Systems | Oxford Brookes University | S1 2025–26
 
 ---
@@ -140,7 +140,6 @@ The following changes were made iteratively based on test results:
 ---
 
 ## Author
-
-Student Number: [HariPrakash]  
-Module: ENGR7023 – Real-time Embedded Systems  
+ HariPrakash  
+ Real-time Embedded Systems  
 Oxford Brookes University | Semester 1, 2025–26
